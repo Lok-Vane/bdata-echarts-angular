@@ -1,0 +1,70 @@
+<app-header></app-header>
+
+<section class="main">
+    <div class="column">
+        <div class="panel bar">
+            <!-- <app-ec-bar-a></app-ec-bar-a> -->
+            <h3>{{EOptions.chartA.title}}</h3>
+            <app-myecharts [options]="EOptions.chartA.options" #A></app-myecharts>
+            <div class="panel-footer"></div>
+        </div>
+        <div class="panel line">
+            <!-- <app-ec-line-b></app-ec-line-b> -->
+            <h3>
+                {{EOptions.chartB.title}}
+                <a class="active" href="javascript:;">2019</a>
+                <a href="javascript:;">2020</a>
+            </h3>
+            <app-myecharts [options]="EOptions.chartB.options" #B></app-myecharts>
+            <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie">
+            <!-- <app-ec-pie-c></app-ec-pie-c> -->
+            <h3>{{EOptions.chartC.title}}</h3>
+            <app-myecharts [options]="EOptions.chartC.options" #C></app-myecharts>
+            <div class="panel-footer"></div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="no">
+            <div class="no-head">
+                <ul>
+                    <li>123456789</li>
+                    <li>987654321</li>
+                </ul>
+            </div>
+            <div class="no-foot">
+                <ul>
+                    <li>当前需求</li>
+                    <li>市场供应</li>
+                </ul>
+            </div>
+        </div>
+        <div class="map">
+            <app-ec-map></app-ec-map>
+            <img src="assets/imgs/map.png" class="map1">
+            <img src="assets/imgs/lbx.png" class="map2">
+            <img src="assets/imgs/jt.png" class="map3">
+        </div>
+    </div>
+    <div class="column">
+        <div class="panel bar">
+            <!-- <app-ec-bar-d></app-ec-bar-d> -->
+            <h3>{{EOptions.chartD.title}}</h3>
+            <app-myecharts [options]="EOptions.chartD.options" #D></app-myecharts>
+            <div class="panel-footer"></div>
+        </div>
+        <div class="panel line">
+            <!-- <app-ec-line-e></app-ec-line-e> -->
+            <h3>{{EOptions.chartE.title}}</h3>
+            <app-myecharts [options]="EOptions.chartE.options" #E></app-myecharts>
+            <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie">
+            <!-- <app-ec-pie-f></app-ec-pie-f> -->
+            <h3>{{EOptions.chartF.title}}</h3>
+            <app-myecharts [options]="EOptions.chartF.options" #F></app-myecharts>
+            <div class="panel-footer"></div>
+        </div>
+    </div>
+</section>
